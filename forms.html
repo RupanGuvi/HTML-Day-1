@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend><strong>Personal Info</strong></legend>
+          <p>
+            <label for="firstname">FirstName</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Enter your first name"
+              required
+            />
+          </p>
+          <p>
+            <label for="lastname">LastName</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Enter your last name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your Phone Number"
+              required
+            />
+          </p>
+          <p>
+            <label for="dob">DOB</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Enter your Date Of Birth"
+              required
+            />
+          </p>
+          <p>
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your Age"
+              required
+            />
+          </p>
+          <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Favorite Foods</strong></legend>
+          <p>
+            <label for="food">Favorite Food</label>
+            <select name="food" id="food">
+              <optgroup label="Tiffin">
+                <option value="Idly">Idly</option>
+                <option value="Dosai">Dosai</option>
+                <option value="Pongal">Pongal</option>
+                <option value="Poori">Poori</option>
+              </optgroup>
+              <optgroup label="lunch">
+                <option value="Briyani">Briyani</option>
+                <option value="Meals">Meals</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Chapatthi">Chapatthi</option>
+              </optgroup>
+              <optgroup label="Dinner">
+                <option value="Chapatthi">Chapatthi</option>
+                <option value="Idly">Idly</option>
+                <option value="Dosai">Dosai</option>
+                <option value="Parotta">Parotta</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Favorite Sports</strong></legend>
+          <p>
+            <label for="sport">Favorite Sports</label>
+            <input
+              type="text"
+              name="sport"
+              id="sport"
+              placeholder="Enter your Favorite Sport"
+              list="sport-list"
+            />
+            <datalist id="sport-list">
+              <option value="VolleyBall"></option>
+              <option value="FootBall"></option>
+              <option value="Cricket"></option>
+            </datalist>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Education</strong></legend>
+          <p>
+            <label for="12th">12th</label>
+            <input type="radio" name="education" id="12th" />
+          </p>
+          <p>
+            <label for="10th">10th</label>
+            <input type="radio" name="education" id="10th" />
+          </p>
+          <p>
+            <label for="diploma">Diploma</label>
+            <input type="radio" name="education" id="diploma" />
+          </p>
+          <p>
+            <label for="degree">Degree</label>
+            <input type="radio" name="education" id="degree" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Skills</strong></legend>
+          <p>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skills" id="html" value="html" />
+          </p>
+          <p>
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="css" value="css" />
+          </p>
+          <p>
+            <label for="js">JS</label>
+            <input type="checkbox" name="skills" id="js" value="js" />
+          </p>
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <a href="" target="_top">Back to top</a>
+    </footer>
+  </body>
+</html>
